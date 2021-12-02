@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" type="text/css" href="file1.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </head>
+      <script src= "code.js">    
+      </script>
+      <body>
+           <div style="border:1px solid black; padding: 5px; margin: 5px;">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                          <li class="nav-item">
+                                                <span class="glyphicon glyphicon-home">      
+                                                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                </span>      
+                                                <span class="glyphicon glyphicon-file">      
+                                                      <a class="nav-link disabled" aria-current="page" href="#">Post</a>
+                                                </span>
+                                                <span class="glyphicon glyphicon-book">      
+                                                      <a class="nav-link disabled" aria-current="page" href="#">Contact</a>
+                                                </span>
+                                                <span class="glyphicon glyphicon-question-sign">      
+                                                      <a class="nav-link disabled" aria-current="page" href="#">Help</a>
+                                                </span>
+                                          </li>
+                                    </ul>
+                                    <div class="search">
+                                         <span class="glyphicon glyphicon-search">
+                                          <input type="text" placeholder="Search" name="search" >
+                                         </span> 
+                                    </div>
+                              </div>
+                        </div>
+                  </nav>
+            </div>
+
+             <div style="border: 2px solid black;border-collapse:collapse;">
+             <table>
+                  <tr>
+                        <li>
+                              <button id="Bold" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+                              </button>
+
+                              <button id="Italic" type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-italic" aria-hidden="true"></span>
+                              </button>
+
+                              <button id="Underline" type="button" id="underline" >U</button>   
+                              
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Style
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Style1</a></li>
+                                    <li><a class="dropdown-item" href="#">Style2</a></li>
+                                    <li><a class="dropdown-item" href="#">Style3</a></li>
+                                  </ul>
+
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                              </button>
+
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Normal
+                                   </button>
+                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                     <li>Action</li>
+                                     <li>Another action</li>
+                                     <li>Something else here</li>
+                                   </ul>
+
+                             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Font
+                                   </button>
+                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                     <li><a class="dropdown-item" href="#">Font1</a></li>
+                                     <li><a class="dropdown-item" href="#">Font2</a></li>
+                                     <li><a class="dropdown-item" href="#">Font3</a></li>
+                                   </ul>
+
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Size
+                                         </button>
+                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                           <li><a class="dropdown-item" href="#">Aral</a></li>
+                                           <li><a class="dropdown-item" href="#">Verdana</a></li>
+                                           
+                                         </ul>
+
+                              
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                          A
+                                         </button>
+                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                           <li><a class="dropdown-item" href="#">10</a></li>
+                                           <li><a class="dropdown-item" href="#">5</a></li>
+                                           
+                                         </ul>
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                    <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+                              </button>
+
+                         </li>
+                   </tr>
+                   <tr>
+                        <textarea type="text" id="reviews"></textarea><br><br>
+                   </tr>
+             </table>
+            </div>
+
+            <input type ="checkbox" id="comments" name="comments" value="Comments">
+            <label for="comments"> Comments</label>
+            <button id="Save" >Save</button>
+            <div id="Reviews_paragraph"></div>
+            <br> 
+            <!-- <button type="button" onclick="myFunction()">Try it</button>
+            <div id="Reviews_paragraph"></div>
+            <script>
+                  function myFunction() {
+            /* var x = document.getElementById("myText");
+             var defaultVal = x.defaultValue;
+             var currentVal = x.value;
+             
+             if (defaultVal == currentVal) {
+               document.getElementById("demo").innerHTML = "Default value and current value is the same: "
+               + x.defaultValue + " and " + x.value
+               + "<br>Change the value of the text field to see the difference!";
+             } else {
+               document.getElementById("demo").innerHTML = "The default value was: " + defaultVal
+               + "<br>The new, current value is: " + currentVal;
+             }
+           }*/
+           post={id:0,post:"Devan" ,comments:[]};
+           
+           var r=["a","b","c"]
+           for(var i=0;i<r.length;i++){
+                 var x=r[i]+"<br>"+`<input id=`+i+` class="input_file" placeholder="Enter Comment">
+                           <button id=`+i+` onclick=nsns(this.id)>Add</button>`+"<br>";
+                   $('#Reviews_paragraph').append(x);       
+                  //  console.log(document.getElementsByClassName("input_file")[i].id);        
+           }
+      }
+      function nsns(id){
+            console.log(id);
+      }
+            </script> -->
+              
+
+      </body>
+</html>
